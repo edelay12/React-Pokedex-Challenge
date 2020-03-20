@@ -1,0 +1,65 @@
+.Poke-card-li {
+  min-width: 320px;
+  min-height: 430px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.Poke-card-li:hover {
+  min-width: 330px;
+  min-height: 440px;
+}
+
+#Poke-img {
+  min-height: 200px;
+  min-width: 200px;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+.Poke-header.type-ul,
+.weakness-ul,
+.type-ul {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 10px 0;
+}
+.Poke-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.Poke-num {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.Poke-weakness,
+.Poke-type {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.poke-type-title,
+.poke-weakness-title,
+.Poke-name,
+.Poke-num {
+  margin: 0;
+}

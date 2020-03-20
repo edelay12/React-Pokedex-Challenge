@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import SearchBar from "./search-bar";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
 
   ReactDOM.render(
     <BrowserRouter>
-      <App />
+      <SearchBar />
     </BrowserRouter>,
     div
   );

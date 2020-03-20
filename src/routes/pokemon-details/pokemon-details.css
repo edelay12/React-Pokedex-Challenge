@@ -1,0 +1,82 @@
+.back-button-list {
+  padding: 5px 7px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  background: none;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pokemon-details {
+  position: relative;
+}
+
+.details-poke-type,
+.details-height-weight,
+.pokemon-details,
+.details-poke-weakness,
+.next-container,
+.prev-container,
+.details-weakness-ul,
+.details-type-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-poke-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+.details-container > * {
+  margin: 0 20px;
+}
+
+.details-weakness-ul,
+.details-type-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details-weakness-ul > li,
+.details-type-ul > li,
+.details-poke-name,
+.details-next,
+.details-next-label,
+.details-prev,
+.details-prev-label,
+.details-weight,
+.details-weaknesses-title,
+.details-type-title,
+.details-height,
+.details-poke-num {
+  margin: 0 10px 10px;
+  text-align: center;
+}
+
+.details-poke-img {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+.details-next,
+.details-prev {
+  color: rgb(4, 126, 240);
+  cursor: pointer;
+}

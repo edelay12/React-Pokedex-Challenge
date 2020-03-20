@@ -1,0 +1,18 @@
+.filter-toggles {
+  min-width: 500px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+.filter-label {
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.type-filter,
+.weakness-filter {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 30px;
+  margin: 0 10px;
+}
