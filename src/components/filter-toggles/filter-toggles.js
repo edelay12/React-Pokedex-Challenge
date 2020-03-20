@@ -15,7 +15,6 @@ export default class FilterToggles extends Component {
     let weaknesses = [];
     PokedexApiService.getPokemon()
       .then(pokemon => {
-        console.log(pokemon);
         pokemon.pokemon.map(poke => {
           types = [...types, ...poke.type];
           weaknesses = [...weaknesses, ...poke.weaknesses];
@@ -30,8 +29,6 @@ export default class FilterToggles extends Component {
         for (let i in weaknesses) {
           weaknesses[i] = { value: weaknesses[i], label: weaknesses[i] };
         }
-
-        console.log(types);
         this.setState({ types: types, weaknesses: weaknesses });
       })
       .catch(err => {
@@ -44,7 +41,9 @@ export default class FilterToggles extends Component {
     return (
       !this.state.hasError && (
         <section className="filter-toggles">
-          <label className="filter-label" htmlFor='filters'>Filters: </label>
+          <label className="filter-label" htmlFor="filters">
+            Filters:{" "}
+          </label>
           <Select
             defaultValue={null}
             placeholder="Type..."

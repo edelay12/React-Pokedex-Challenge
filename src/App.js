@@ -26,7 +26,6 @@ class App extends Component {
 
     let valuesToCheck = [];
     if (types) {
-      console.log(types);
       for (let i in types) {
         valuesToCheck.push(types[i].value);
       }
@@ -41,20 +40,17 @@ class App extends Component {
     if (this.props.location !== "/") {
       this.props.history.push("/");
     }
-
-    console.log(weaknesses);
     let valuesToCheck = [];
     if (weaknesses) {
       for (let i in weaknesses) {
         valuesToCheck.push(weaknesses[i].value);
       }
-      console.log(valuesToCheck);
 
       let results = this.pokemon.filter(pokemon => {
         //let check =  (arr, target) => target.every(v => arr.includes(v)
         return valuesToCheck.every(v => pokemon.weaknesses.includes(v));
       });
-      console.log(results);
+
       this.setState({ pokemon: results });
     } else this.setState({ pokemon: this.pokemon });
   };

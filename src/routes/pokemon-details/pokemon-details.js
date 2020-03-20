@@ -21,7 +21,6 @@ class PokemonDetails extends Component {
         let pokeToDisplay = response.pokemon.filter(foundPokemon => {
           return foundPokemon.name == pokemon;
         })[0];
-        console.log(pokeToDisplay);
         this.setState({ pokemon: pokeToDisplay });
       })
       .catch(err => console.log(err));
@@ -29,13 +28,11 @@ class PokemonDetails extends Component {
 
   componentDidMount() {
     const { pokemon } = this.props.match.params;
-    console.log(pokemon);
     PokedexApiService.getPokemon()
       .then(response => {
         let pokeToDisplay = response.pokemon.filter(foundPokemon => {
           return foundPokemon.name == pokemon;
         })[0];
-        console.log(pokeToDisplay);
         this.setState({ pokemon: pokeToDisplay });
       })
       .catch(err => console.log(err));
@@ -49,13 +46,13 @@ class PokemonDetails extends Component {
           className="back-button-list"
           onClick={() => this.props.history.push("/")}
         >
-        Back to list
+          Back to list
         </button>
         <div className="details-poke-header">
           <h1 className="details-poke-name">{pokemon.name}</h1>
           <h3 className="details-poke-num">{"#" + pokemon.num}</h3>
         </div>
-        <img src={pokemon.img} alt='pokemon' className="details-poke-img" />
+        <img src={pokemon.img} alt="pokemon" className="details-poke-img" />
         <div className="details-container">
           <div className="details-poke-type">
             <ul className="details-type-ul">
