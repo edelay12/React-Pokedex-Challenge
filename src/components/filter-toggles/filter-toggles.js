@@ -44,7 +44,7 @@ export default class FilterToggles extends Component {
     return (
       !this.state.hasError && (
         <section className="filter-toggles">
-          <label className="filter-label">Filters: </label>
+          <label className="filter-label" htmlFor='filters'>Filters: </label>
           <Select
             defaultValue={null}
             placeholder="Type..."

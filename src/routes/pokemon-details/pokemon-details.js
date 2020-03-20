@@ -49,13 +49,13 @@ class PokemonDetails extends Component {
           className="back-button-list"
           onClick={() => this.props.history.push("/")}
         >
-          Back to list
+        Back to list
         </button>
         <div className="details-poke-header">
           <h1 className="details-poke-name">{pokemon.name}</h1>
           <h3 className="details-poke-num">{"#" + pokemon.num}</h3>
         </div>
-        <img src={pokemon.img} className="details-poke-img" />
+        <img src={pokemon.img} alt='pokemon' className="details-poke-img" />
         <div className="details-container">
           <div className="details-poke-type">
             <ul className="details-type-ul">

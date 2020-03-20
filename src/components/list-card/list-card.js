@@ -5,12 +5,12 @@ import "./list-card.css";
 export default function ListCard({ poke }) {
   return (
     <Link to={`/details/${poke.name}`}>
-      <li className="Poke-card-li">
+      <li className={`Poke-card-li ${poke.type[0]}`}>
         <div className="Poke-header">
           <h3 className="Poke-name">{poke.name}</h3>
           <h3 className="Poke-num">{poke.num}</h3>
         </div>
-        <img id="Poke-img" src={poke.img} />
+        <img id="Poke-img" alt='pokemon' src={poke.img} />
         <div className="Poke-type">
           <h3 className="poke-type-title">Type</h3>
           <ul className="type-ul">

@@ -16,7 +16,7 @@
 
 .App-search {
   min-height: 8vh;
-  background-color: wheat;
+  background-color: lightgrey;
   min-width: 100%;
   display: flex;
   justify-content: space-around;
@@ -28,6 +28,12 @@
   min-width: 100%;
 }
 
+.App-logo {
+color: #fff;
+font-size: 20px;
+letter-spacing: 1px;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,4 +41,13 @@ a {
 a :visited {
   color: black;
   text-decoration: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+.App-search {
+ flex-direction: column;
+}
+
 }

@@ -1,8 +1,8 @@
 .Poke-card-li {
   min-width: 320px;
   min-height: 430px;
-  border: 1px solid black;
   border-radius: 15px;
+  box-shadow: var(--shadow);
   margin: 25px;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,38 @@
   position: relative;
   text-decoration: none;
   color: black;
+}
+
+.Grass {
+    background-image: url(./backgrounds/grass-poke.png);
+}
+
+.Normal, .Ghost {
+    background-image: url(./backgrounds/normal-poke.png);
+}
+
+.Bug {
+    background-image: url(./backgrounds/bug-poke.png);
+}
+
+.Fire, .Fighting {
+    background-image: url(./backgrounds/fire-poke.png);
+}
+
+.Water {
+    background-image: url(./backgrounds/water-poke.jpg);
+}
+
+.Electric {
+    background-image: url(./backgrounds/electric-poke.png);
+}
+
+.Ground, .Rock {
+    background-image: url(./backgrounds/ground-poke.png);
+}
+
+.Poison, .Psychic {
+    background-image: url(./backgrounds/poison-poke.png);
 }
 
 .Poke-card-li:hover {
@@ -22,7 +54,7 @@
   min-height: 200px;
   min-width: 200px;
   margin: 10px 0;
-  border: 1px solid black;
+  box-shadow: var(--shadow);
 }
 
 .Poke-header.type-ul,
@@ -34,6 +66,7 @@
   justify-content: space-evenly;
   padding: 0;
   margin: 10px 0;
+  text-align: center;
 }
 .Poke-name {
   position: absolute;
@@ -54,7 +87,7 @@
   flex-direction: column;
   align-items: center;
   padding: 5px;
-  border: 1px solid black;
+  overflow-x: auto;
 }
 
 .poke-type-title,

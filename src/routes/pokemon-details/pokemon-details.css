@@ -11,7 +11,9 @@
 }
 
 .pokemon-details {
+    padding: 40px 20px;
   position: relative;
+  overflow-y: auto;
 }
 
 .details-poke-type,
@@ -36,9 +38,7 @@
 
 .details-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-
   align-items: flex-start;
 }
 
@@ -72,11 +72,29 @@
 .details-poke-img {
   height: 300px;
   width: 300px;
-  margin: auto;
+  margin: 0 auto 30px;
 }
 
 .details-next,
 .details-prev {
   color: rgb(4, 126, 240);
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-container > * {
+        margin: 10px 0;
+      }
+      .details-poke-img {
+        margin: 0 auto 10px;
+      }
+      .pokemon-details {
+        padding: 50px 0 0 0;
+      position: relative;
+      overflow-y: auto;
+    }
 }

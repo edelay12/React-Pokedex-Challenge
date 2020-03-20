@@ -7,6 +7,7 @@
 .filter-label {
   padding: 0 5px;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .type-filter,
@@ -15,4 +16,18 @@
   max-width: 200px;
   min-height: 30px;
   margin: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .filter-toggles {
+        min-width: 300px;
+        margin: 5px 0 10px;
+        padding: 0 0;
+        flex-direction: column;
+      }
+
+      .filter-toggles > * {
+        margin: 5px 0;
+      }
 }
